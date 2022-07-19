@@ -26,11 +26,11 @@ const Map = ({
         center={coordinates}
         defaultZoom={14}
         margin={[50, 50, 50, 50]}
-        // options={{
-        //   disableDefaultUI: true,
-        //   zoomControl: true,
-        //   styles: mapStyles,
-        // }}
+        options={{
+          disableDefaultUI: true,
+          zoomControl: true,
+          styles: mapStyles,
+        }}
         onChange={(event) => {
           setCoordinates({ lat: event.center.lat, lng: event.center.lng });
           setBounds({ ne: event.marginBounds.ne, sw: event.marginBounds.sw });
